@@ -1,13 +1,13 @@
     import { connect } from 'cloudflare:sockets';
 
-    let at = '351c9981-04b6-4103-aa4b-864aa9c91469';
+    let at = 'b1cb4a68-27f9-48af-b459-6638b946d080';
     let fallbackAddress = '';
     let fallbackPort = '443';
     let socks5Config = '';
     let customPreferredIPs = [];
     let customPreferredDomains = [];
     let enableSocksDowngrade = false;
-    let disableNonTLS = false;
+    let disableNonTLS = true;
     let disablePreferred = false;
 
     let enableRegionMatching = true;
@@ -21,9 +21,9 @@
     let ex = false;  
     let tp = '';  
 
-    let scu = 'https://url.v1.mk/sub';  
+    let scu = 'https://url.v1.mk/sub';
     // 远程配置URL（硬编码）
-    const remoteConfigUrl = 'https://raw.githubusercontent.com/byJoey/test/refs/heads/main/tist.ini';
+    const remoteConfigUrl = 'https://cdn.jsdelivr.net/gh/moetools/static@master/rule/proconfig.ini';
 
     let epd = false;   // 优选域名默认关闭
     let epi = true;       
